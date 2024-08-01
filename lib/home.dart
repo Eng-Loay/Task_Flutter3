@@ -23,6 +23,21 @@ class HomeView extends StatelessWidget {
               const DoctorWidget(),
               const InputWidget(),
               Hospital(),
+              Container(
+                margin: EdgeInsets.only(
+                  right: MediaQuery.of(context).size.width * 0.61,
+                ),
+                padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+                child: Text(
+                  "Near Doctor",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+
               const DoctorCard(
                 name: 'Dr. Joseph Brostito',
                 specialty: 'Dental Specialist',
